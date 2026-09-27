@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>심규열 | 국내파 영어회화 작가</title>
+<meta name="description" content="『영어 회화, 한국에서도 되던데요?』 저자 심규열의 작가 프로필 페이지">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --ink: #101014;
+    --bg: #f8f8fc;
+    --card: #ffffff;
+    --accent: #4f46e5;
+    --accent-dark: #4338ca;
+    --accent-tint: #eef0fd;
+    --text: #23232b;
+    --muted: #6b6b76;
+    --border: #e6e6f0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  a { color: inherit; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(248, 248, 252, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand { font-weight: 800; font-size: 15px; letter-spacing: 0.3px; color: var(--ink); }
+  .nav-links { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .nav-links a:hover { color: var(--accent-dark); }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: transform 0.12s, background 0.15s, opacity 0.15s;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-outline {
+    background: #fff;
+    color: var(--ink);
+    border: 1.5px solid var(--border);
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent-dark); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 56px 20px 0;
+    text-align: center;
+  }
+  .hero-inner { max-width: 640px; margin: 0 auto; }
+  .avatar-placeholder {
+    width: 104px;
+    height: 104px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), #8b7bf7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 24px rgba(79, 70, 229, 0.25);
+  }
+
+  /* ---------- CSS 곰인형(테디베어) 아바타 ---------- */
+  .bear-avatar {
+    position: relative;
+    overflow: visible;
+    background: radial-gradient(circle at 35% 32%, #dda06a 0%, #b97a42 55%, #93602f 100%) !important;
+  }
+  .bear-ear {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    top: -9%;
+    border-radius: 50%;
+    background: #93602f;
+    z-index: 1;
+  }
+  .bear-ear::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    top: 22%;
+    left: 22%;
+    border-radius: 50%;
+    background: #e7c39a;
+  }
+  .bear-ear-left { left: -6%; }
+  .bear-ear-right { right: -6%; }
+  .bear-snout {
+    position: absolute;
+    width: 46%;
+    height: 34%;
+    top: 48%;
+    left: 27%;
+    border-radius: 50%;
+    background: #f1dcc0;
+    z-index: 2;
+  }
+  .bear-nose {
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: -8%;
+    left: 40%;
+    border-radius: 50%;
+    background: #33261a;
+  }
+  .bear-mouth {
+    position: absolute;
+    width: 24%;
+    height: 13%;
+    top: 72%;
+    left: 38%;
+    border-bottom: 2px solid #6b4a2b;
+    border-radius: 0 0 50% 50%;
+  }
+  .bear-eye {
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 33%;
+    border-radius: 50%;
+    background: #241a12;
+    z-index: 2;
+  }
+  .bear-eye::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.85);
+  }
+  .bear-eye-left { left: 27%; }
+  .bear-eye-right { right: 27%; }
+
+  .eyebrow {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 14px;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 7.2vw; }
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero .role { color: var(--muted); font-size: 15.5px; margin: 0 0 28px; }
+  .hero-ctas { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+
+  /* ---------- Mockup card (대시보드 목업) ---------- */
+  .mockup-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 24px 60px rgba(16, 16, 20, 0.08);
+    overflow: hidden;
+    text-align: left;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .mockup-topbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: #fafafe;
+  }
+  .mockup-dot { width: 9px; height: 9px; border-radius: 50%; }
+  .mockup-dot.red { background: #ff5f57; }
+  .mockup-dot.yellow { background: #febc2e; }
+  .mockup-dot.green { background: #28c840; }
+  .mockup-url {
+    margin-left: 10px;
+    font-size: 11.5px;
+    color: var(--muted);
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 6px;
+  }
+  .mockup-body { padding: 24px; }
+  .mockup-title { font-weight: 800; font-size: 15px; margin-bottom: 18px; color: var(--ink); }
+  .mockup-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .mockup-row:last-child { margin-bottom: 0; }
+  .mockup-label { flex: 0 0 152px; font-size: 12.5px; font-weight: 700; color: var(--text); }
+  .mockup-bar { flex: 1; height: 8px; background: var(--accent-tint); border-radius: 999px; overflow: hidden; }
+  .mockup-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #8b7bf7); border-radius: 999px; }
+  .mockup-pct {
+    flex: 0 0 auto;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--accent-dark);
+    background: var(--accent-tint);
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  @media (max-width: 520px) {
+    .mockup-label { flex-basis: 108px; font-size: 11.5px; }
+  }
+
+  /* ---------- Divider (dot pattern) ---------- */
+  .divider {
+    background-image: radial-gradient(circle, #d9d9ea 1.4px, transparent 1.4px);
+    background-size: 16px 16px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .divider span {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--muted);
+  }
+
+  /* ---------- Layout ---------- */
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+  }
+  .section { margin-bottom: 26px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 16px 40px rgba(16, 16, 20, 0.05);
+  }
+  .section-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--ink);
+    margin: 0 0 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.3px;
+  }
+  .section-title .bar {
+    width: 6px;
+    height: 22px;
+    background: var(--accent);
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .section-sub { color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+
+  /* ---------- Problem section ---------- */
+  .problem-wrap { max-width: 880px; margin: 0 auto; padding: 46px 20px; }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
+  .problem-grid h2 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 0 0 14px;
+    letter-spacing: -0.4px;
+  }
+  .warn-list { margin: 18px 0 0; padding: 0; list-style: none; }
+  .warn-list li {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  .warn-icon { flex-shrink: 0; color: #d97706; }
+  .alert-card {
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid;
+    margin-bottom: 10px;
+  }
+  .alert-card:last-child { margin-bottom: 0; }
+  .alert-card.warn { background: #fffbea; border-color: #fde68a; }
+  .alert-card.danger { background: #fef2f2; border-color: #fecaca; }
+  .alert-card.neutral { background: #fff; border-color: var(--border); }
+  .alert-title { font-weight: 800; font-size: 13.5px; margin-bottom: 2px; }
+  .alert-title.warn-text { color: #92610a; }
+  .alert-title.danger-text { color: #b42318; }
+  .alert-sub { font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 700px) {
+    .problem-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- About ---------- */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 26px;
+    align-items: start;
+  }
+  .about-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    background: var(--accent-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .bio-meta { color: var(--muted); font-size: 13.5px; margin-bottom: 14px; }
+  .bio-list { margin: 0; padding-left: 18px; }
+  .bio-list li { margin-bottom: 10px; font-size: 14.5px; line-height: 1.6; }
+  .bio-list strong { color: var(--ink); }
+
+  @media (max-width: 560px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-photo { width: 100%; height: 180px; }
+  }
+
+  /* ---------- Book ---------- */
+  .book-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+  }
+  .book-cover {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(160deg, var(--ink), #2c2c3a);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 12px 24px rgba(16,16,20,0.25);
+  }
+  .book-meta { color: var(--muted); font-size: 13.5px; margin-bottom: 10px; }
+  .book-desc { font-size: 14.5px; line-height: 1.7; margin-bottom: 20px; }
+  .book-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  @media (max-width: 560px) {
+    .book-grid { grid-template-columns: 1fr; }
+    .book-cover { width: 100%; height: 200px; }
+  }
+
+  /* ---------- Content (YouTube / Instagram) ---------- */
+  .content-block { margin-bottom: 26px; }
+  .content-block:last-child { margin-bottom: 0; }
+  .content-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .content-block-head h3 { margin: 0; font-size: 16.5px; font-weight: 800; color: var(--ink); }
+  .platform-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-dark);
+    text-decoration: none;
+  }
+  .platform-link:hover { text-decoration: underline; }
+
+  .yt-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .yt-thumb {
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+    background: var(--ink);
+    color: var(--accent);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .yt-info-title { font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
+  .yt-info-sub { color: var(--muted); font-size: 13px; }
+
+  .insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .insta-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+  }
+  .insta-thumb {
+    aspect-ratio: 1 / 1;
+    background: var(--accent-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+  }
+  .insta-rank { position: relative; }
+  .insta-rank-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+  .insta-caption { padding: 10px 12px; font-size: 12.5px; color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .insta-grid { grid-template-columns: 1fr 1fr; }
+    .yt-card { flex-direction: column; text-align: center; }
+  }
+
+  /* ---------- Contact ---------- */
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .field input, .field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-family: inherit;
+    background: #fff;
+    color: var(--text);
+    resize: vertical;
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-tint);
+  }
+  .contact-note {
+    font-size: 13px;
+    color: var(--muted);
+    margin: -6px 0 18px;
+    line-height: 1.6;
+  }
+  .contact-alt {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border);
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .contact-alt a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+  .contact-alt a:hover { text-decoration: underline; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--accent-dark); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-brand">심규열</span>
+    <ul class="nav-links">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#book">저서</a></li>
+      <li><a href="#content">콘텐츠</a></li>
+      <li><a href="#contact">문의</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="avatar-placeholder bear-avatar">
+      <span class="bear-ear bear-ear-left"></span>
+      <span class="bear-ear bear-ear-right"></span>
+      <span class="bear-eye bear-eye-left"></span>
+      <span class="bear-eye bear-eye-right"></span>
+      <span class="bear-snout">
+        <span class="bear-nose"></span>
+        <span class="bear-mouth"></span>
+      </span>
+    </div>
+    <span class="eyebrow">100% 국내파 영어 스피커</span>
+    <h1>영어는, <span class="accent">한국에서도</span> 됩니다</h1>
+    <p class="role">『영어 회화, 한국에서도 되던데요?』 저자 · 심규열</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#book">책 사러 가기</a>
+      <a class="btn btn-outline" href="#contact">문의하기</a>
+    </div>
+
+    <div class="mockup-card">
+      <div class="mockup-topbar">
+        <span class="mockup-dot red"></span>
+        <span class="mockup-dot yellow"></span>
+        <span class="mockup-dot green"></span>
+        <span class="mockup-url">mrfluency.kr/roadmap</span>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-title">심규열의 국내파 로드맵</div>
+        <div class="mockup-row">
+          <span class="mockup-label">서강대 Best Speaker</span>
+          <div class="mockup-bar"><div class="mockup-fill" style="width:100%"></div></div>
+          <span class="mockup-pct">완료</span>
+        </div>
+        <div class="mockup-row">
+          <span class="mockup-label">저서 출간 (2020)</span>
+          <div class="mockup-bar"><div class="mockup-fill" style="width:100%"></div></div>
+          <span class="mockup-pct">완료</span>
+        </div>
+        <div class="mockup-row">
+          <span class="mockup-label">미스터플루언씨 운영</span>
+          <div class="mockup-bar"><div class="mockup-fill" style="width:75%"></div></div>
+          <span class="mockup-pct">진행중</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><span>국내파도 됩니다 · 실전 검증 학습법</span></div>
+
+<div class="problem-wrap">
+  <div class="problem-grid">
+    <div>
+      <h2>국내파는 안 된다는 편견,<br>저도 그랬습니다</h2>
+      <p class="section-sub" style="margin-bottom:0;">교환학생도, 어학연수도 없이 시작한 저 역시 처음엔 이런 벽에 부딪혔어요.</p>
+      <ul class="warn-list">
+        <li><span class="warn-icon">⚠</span> 50곳 넘는 학원·스터디를 다녀도 제자리걸음</li>
+        <li><span class="warn-icon">⚠</span> 전화영어를 시도했지만 나중엔 콜포비아로 변함</li>
+        <li><span class="warn-icon">⚠</span> 인풋 위주 학습이라 아웃풋 경험이 거의 없었음</li>
+      </ul>
+    </div>
+    <div>
+      <div class="alert-card warn">
+        <div class="alert-title warn-text">학원 50곳 이상 수강</div>
+        <div class="alert-sub">그런데도 회화 실력은 제자리</div>
+      </div>
+      <div class="alert-card danger">
+        <div class="alert-title danger-text">전화영어 콜포비아</div>
+        <div class="alert-sub">전화벨만 울려도 심장이 뛰던 시절</div>
+      </div>
+      <div class="alert-card neutral">
+        <div class="alert-title">아웃풋 경험 0</div>
+        <div class="alert-sub">읽고 외우기만 하고 말할 기회는 없었음</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><span>그래서 만든, 3단계 학습법</span></div>
+
+<div class="container">
+
+  <section class="section" id="about">
+    <div class="card">
+      <h2 class="section-title"><span class="bar"></span>작가 소개</h2>
+      <p class="section-sub">유학도, 어학연수도, 조기교육도 없이 국내에서 영어 회화를 완성한 이야기</p>
+      <div class="about-grid">
+        <div class="about-photo bear-avatar">
+          <span class="bear-ear bear-ear-left"></span>
+          <span class="bear-ear bear-ear-right"></span>
+          <span class="bear-eye bear-eye-left"></span>
+          <span class="bear-eye bear-eye-right"></span>
+          <span class="bear-snout">
+            <span class="bear-nose"></span>
+            <span class="bear-mouth"></span>
+          </span>
+        </div>
+        <div>
+          <div class="bio-meta">심규열 (1990.12.17) · 국내파 영어회화 강연자 · '미스터플루언씨' 창업자</div>
+          <ul class="bio-list">
+            <li><strong>100% 국내파</strong> — 교환학생·어학연수·조기교육 없이, 도전 가능했던 미국 인턴십마저 포기하고 "한국에서도 된다"는 것을 스스로 증명</li>
+            <li><strong>토익 950점</strong> 달성 및 서강대학교 영어 디베이팅 대회에서 국내파 유일로 <strong>Best Speaker Award</strong> 수상</li>
+            <li>50개 이상의 학원·스터디를 거친 시행착오 끝에 <strong>쉐도우 스피킹 · 블라인드 스피킹 · 문장 만들기</strong> 3단계 학습법 개발</li>
+            <li>온라인 영어회화 서비스 <strong>'미스터플루언씨'</strong> 창업 및 운영</li>
+            <li>유튜브 <strong>'국내파영어회화'</strong> 채널과 브런치스토리에서 실전 학습법 콘텐츠 연재</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <div class="card">
+      <h2 class="section-title"><span class="bar"></span>저서 소개</h2>
+      <div class="book-grid">
+        <div class="book-cover">영어 회화,<br>한국에서도<br>되던데요?</div>
+        <div>
+          <div class="book-meta">토마토출판사 · 2020.09.29 출간 · 13,800원</div>
+          <p class="book-desc">
+            3년의 시행착오를 3개월로 압축한 국내파 영어 회화 학습법. 막연한 동기부여 대신
+            쉐도우 스피킹·블라인드 스피킹·문장 만들기 등 구체적인 3단계 공부법과 커리큘럼을 제시하며,
+            해외 경험 없이도 유창한 회화 실력을 만들 수 있다는 것을 직접 증명한 저자의 실전 가이드.
+          </p>
+          <div class="book-buttons">
+            <a class="btn btn-primary" href="https://product.kyobobook.co.kr/detail/S000001938305" target="_blank" rel="noopener">교보문고에서 보기</a>
+            <a class="btn btn-outline" href="https://www.yes24.com/product/goods/92890076" target="_blank" rel="noopener">예스24에서 보기</a>
+            <a class="btn btn-outline" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=252331584" target="_blank" rel="noopener">알라딘(전자책)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mockup-card" style="margin-top:24px;">
+        <div class="mockup-topbar">
+          <span class="mockup-dot red"></span>
+          <span class="mockup-dot yellow"></span>
+          <span class="mockup-dot green"></span>
+          <span class="mockup-url">3단계 학습법 타임라인</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-title">책에서 알려주는 3단계 학습법</div>
+          <div class="mockup-row">
+            <span class="mockup-label">STEP 1 · 쉐도우 스피킹</span>
+            <div class="mockup-bar"><div class="mockup-fill" style="width:33%"></div></div>
+            <span class="mockup-pct">1개월차</span>
+          </div>
+          <div class="mockup-row">
+            <span class="mockup-label">STEP 2 · 블라인드 스피킹</span>
+            <div class="mockup-bar"><div class="mockup-fill" style="width:66%"></div></div>
+            <span class="mockup-pct">2개월차</span>
+          </div>
+          <div class="mockup-row">
+            <span class="mockup-label">STEP 3 · 문장 만들기</span>
+            <div class="mockup-bar"><div class="mockup-fill" style="width:100%"></div></div>
+            <span class="mockup-pct">3개월차</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="content">
+    <div class="card">
+      <h2 class="section-title"><span class="bar"></span>콘텐츠</h2>
+      <p class="section-sub">유튜브와 인스타그램에서 매일 만나는 국내파 영어 학습법</p>
+
+      <div class="content-block">
+        <div class="content-block-head">
+          <h3>유튜브 · 국내파영어회화</h3>
+          <a class="platform-link" href="https://www.youtube.com/channel/UCnW1P2rIDO81LMRKKDErHvg" target="_blank" rel="noopener">채널 바로가기 →</a>
+        </div>
+        <a class="yt-card" href="https://www.youtube.com/channel/UCnW1P2rIDO81LMRKKDErHvg" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+          <div class="yt-thumb">▶</div>
+          <div>
+            <div class="yt-info-title">베스트 영상 자리 (제목 교체 예정)</div>
+            <div class="yt-info-sub">가장 반응이 좋았던 영상 1개로 교체해주세요</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="content-block">
+        <div class="content-block-head">
+          <h3>인스타그램 · @mr_fluency</h3>
+          <a class="platform-link" href="https://www.instagram.com/mr_fluency/" target="_blank" rel="noopener">계정 바로가기 →</a>
+        </div>
+        <div class="insta-grid">
+          <a class="insta-card insta-rank" href="https://www.instagram.com/mr_fluency/" target="_blank" rel="noopener">
+            <div class="insta-thumb">
+              <span class="insta-rank-badge">TOP 1</span>
+              콘텐츠 자리
+            </div>
+            <div class="insta-caption">조회수 · 설명 문구 교체 예정</div>
+          </a>
+          <a class="insta-card insta-rank" href="https://www.instagram.com/mr_fluency/" target="_blank" rel="noopener">
+            <div class="insta-thumb">
+              <span class="insta-rank-badge">TOP 2</span>
+              콘텐츠 자리
+            </div>
+            <div class="insta-caption">조회수 · 설명 문구 교체 예정</div>
+          </a>
+          <a class="insta-card insta-rank" href="https://www.instagram.com/mr_fluency/" target="_blank" rel="noopener">
+            <div class="insta-thumb">
+              <span class="insta-rank-badge">TOP 3</span>
+              콘텐츠 자리
+            </div>
+            <div class="insta-caption">조회수 · 설명 문구 교체 예정</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="card">
+      <h2 class="section-title"><span class="bar"></span>문의하기</h2>
+      <p class="section-sub">강연, 콘텐츠 협업, 인터뷰 등 문의는 아래 양식으로 보내주세요</p>
+      <div class="contact-note">
+        ※ 이 페이지는 정적 페이지라 폼 전송 시 이메일 앱이 열립니다. 아래 이메일 주소를 실제 연락 받으실 주소로 교체해주세요.
+      </div>
+      <form id="contact-form">
+        <div class="field">
+          <label for="cf-name">이름</label>
+          <input type="text" id="cf-name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">이메일</label>
+          <input type="email" id="cf-email" required>
+        </div>
+        <div class="field">
+          <label for="cf-message">문의 내용</label>
+          <textarea id="cf-message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; border:none;">이메일로 문의 보내기</button>
+      </form>
+      <div class="contact-alt">
+        정기 콘텐츠를 이메일로 받고 싶다면 <a href="https://englishtrainer.stibee.com/" target="_blank" rel="noopener">뉴스레터 구독하기</a>,
+        더 많은 글은 <a href="https://brunch.co.kr/@englishspeaking" target="_blank" rel="noopener">브런치스토리</a>에서 볼 수 있어요.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 심규열 · 『영어 회화, 한국에서도 되던데요?』<br>
+  <a href="https://brunch.co.kr/@englishspeaking" target="_blank" rel="noopener">브런치</a> ·
+  <a href="https://www.youtube.com/channel/UCnW1P2rIDO81LMRKKDErHvg" target="_blank" rel="noopener">유튜브</a> ·
+  <a href="https://www.instagram.com/mr_fluency/" target="_blank" rel="noopener">인스타그램</a>
+</footer>
+
+<script>
+(function () {
+  // 연락받으실 실제 이메일 주소로 교체하세요
+  var CONTACT_EMAIL = "your-email@example.com";
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = document.getElementById("cf-name").value.trim();
+    var email = document.getElementById("cf-email").value.trim();
+    var message = document.getElementById("cf-message").value.trim();
+
+    var subject = "[웹프로필 문의] " + name;
+    var body = "이름: " + name + "\n이메일: " + email + "\n\n" + message;
+
+    window.location.href =
+      "mailto:" + CONTACT_EMAIL +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
+
+</body>
+</html>

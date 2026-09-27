@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4주 맞춤 영어회화 트레이닝 플랜 | 미스터플루언씨</title>
+<meta name="description" content="당신만을 위한 4주 맞춤 영어회화 트레이닝 플랜">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --pink: #ff5c72;
+    --pink-dark: #e8425a;
+    --pink-tint: #ffe4e8;
+    --ink: #141414;
+    --ink-soft: #262626;
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #6b6b6b;
+    --border: #f0e2e5;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 520px; margin: 0 auto; }
+  .px { padding-left: 20px; padding-right: 20px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 44px 20px 40px;
+    text-align: center;
+  }
+  .eyebrow {
+    display: inline-block;
+    background: rgba(255, 92, 114, 0.2);
+    color: var(--pink);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: 0.2px;
+  }
+  .hero h1 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin: 0 0 18px;
+  }
+  .hero h1 .accent { color: var(--pink); }
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .chip {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+  .hero p.intro {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #d8d5d5;
+    text-align: left;
+    margin: 0 0 22px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 999px;
+    background: var(--pink);
+    color: #fff;
+    font-size: 15.5px;
+    font-weight: 800;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(255, 92, 114, 0.35);
+  }
+  .btn:active { transform: scale(0.99); }
+
+  /* ---------- Sections / Cards ---------- */
+  section { padding: 34px 20px; }
+  .band-ink { background: var(--ink); color: #fff; }
+  .band-pink { background: var(--pink-tint); }
+  .section-eyebrow {
+    display: inline-block;
+    color: var(--pink);
+    font-size: 12.5px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: 0.2px;
+  }
+  .band-ink .section-eyebrow { color: var(--pink); }
+  h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 0 14px;
+    line-height: 1.4;
+  }
+  h2 .accent { color: var(--pink); }
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(20,20,20,0.05);
+  }
+  .card + .card { margin-top: 12px; }
+  p { line-height: 1.7; font-size: 14.5px; }
+  .muted { color: var(--muted); }
+
+  /* ---------- 프로필/진단 ---------- */
+  .goal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--pink);
+    color: #fff;
+    font-weight: 800;
+    font-size: 13.5px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  ul.plain { margin: 0; padding-left: 18px; }
+  ul.plain li { margin-bottom: 8px; font-size: 14.5px; line-height: 1.6; }
+
+  /* ---------- 기획 포인트 ---------- */
+  .point-card { display: flex; gap: 14px; align-items: flex-start; }
+  .point-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .point-title { font-size: 16px; font-weight: 900; margin-bottom: 2px; }
+  .point-sub { color: var(--pink-dark); font-weight: 700; font-size: 13.5px; margin-bottom: 8px; }
+  .point-desc { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+
+  /* ---------- INPUT:OUTPUT 비율 ---------- */
+  .ratio-row { display: flex; gap: 10px; margin: 18px 0; }
+  .ratio-box {
+    flex: 1;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .ratio-box.output { background: var(--pink); border-color: var(--pink); }
+  .ratio-label { font-size: 13px; font-weight: 800; color: #d8d5d5; margin-bottom: 6px; }
+  .ratio-box.output .ratio-label { color: #fff; }
+  .ratio-pct { font-size: 30px; font-weight: 900; color: #fff; }
+  .band-ink ul.plain li { color: #d8d5d5; }
+  .callout {
+    background: rgba(255, 92, 114, 0.12);
+    border: 1px solid rgba(255, 92, 114, 0.3);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #ffd8de;
+    margin-top: 14px;
+  }
+
+  /* ---------- INPUT 학습 카테고리 ---------- */
+  .yt-pick {
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .yt-pick-title { font-weight: 800; font-size: 14.5px; }
+  .yt-pick-sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  .pill-outline {
+    flex-shrink: 0;
+    border: 1.5px solid var(--pink);
+    color: var(--pink-dark);
+    font-size: 12.5px;
+    font-weight: 800;
+    padding: 7px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  /* 유튜브 추천 영상 교체: 위 .yt-pick 안 .pill-outline 의 href를 실제 영상 URL로 바꾸세요 */
+
+  /* ---------- STEP 카드 ---------- */
+  .step-card { margin-bottom: 14px; }
+  .step-card:last-child { margin-bottom: 0; }
+  .step-tag {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .step-goal { font-size: 13.5px; margin: 6px 0; line-height: 1.7; }
+  .step-goal strong { color: var(--ink); }
+  .quote-block {
+    background: var(--ink);
+    color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .quote-block .accent { color: var(--pink); }
+
+  /* ---------- 시간표 탭 ---------- */
+  .tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+  .tab-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: #fff;
+    font-weight: 800;
+    font-size: 13.5px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .tab-btn.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .day-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .day-row:last-child { border-bottom: none; }
+  .day-badge {
+    flex-shrink: 0;
+    width: 40px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--pink-tint);
+    color: var(--pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .day-task { font-size: 13.5px; line-height: 1.6; padding-top: 4px; }
+
+  /* ---------- 4주 스케줄 아코디언 ---------- */
+  details.week-acc {
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  details.week-acc[open] { border-color: var(--pink); }
+  details.week-acc summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-weight: 900;
+    font-size: 14.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  details.week-acc summary::-webkit-details-marker { display: none; }
+  details.week-acc summary::after {
+    content: "+";
+    font-size: 18px;
+    color: var(--pink);
+    font-weight: 900;
+  }
+  details.week-acc[open] summary::after { content: "–"; }
+  .week-acc-body { padding: 0 16px 16px; }
+  .week-task {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f7f7f7;
+    color: var(--text);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin: 0 6px 6px 0;
+  }
+  .week-task.new { background: var(--pink); color: #fff; }
+  .week-note { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+
+  /* ---------- 4주 후 기대효과 ---------- */
+  .check-item { display: flex; gap: 10px; margin-bottom: 14px; }
+  .check-item:last-child { margin-bottom: 0; }
+  .check-mark {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--pink);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .check-title { font-weight: 800; font-size: 14.5px; margin-bottom: 2px; }
+  .check-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  .ba-card { border-radius: 14px; padding: 16px 18px; margin-top: 10px; }
+  .ba-card.before { background: #f4f4f4; }
+  .ba-card.after { background: var(--pink-tint); }
+  .ba-label { font-weight: 900; font-size: 13px; margin-bottom: 8px; }
+  .ba-card.before .ba-label { color: var(--muted); }
+  .ba-card.after .ba-label { color: var(--pink-dark); }
+  .ba-card ul.plain li { font-size: 13.5px; margin-bottom: 6px; }
+
+  /* ---------- 수업 진행 방식 ---------- */
+  .flow-step {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14.5px;
+  }
+  .flow-arrow { text-align: center; color: var(--pink); font-size: 20px; margin: 6px 0; }
+  .kakao-shot {
+    background: #1e1e1e;
+    border: 1px dashed rgba(255,255,255,0.25);
+    border-radius: 12px;
+    padding: 24px 14px;
+    text-align: center;
+    color: #999;
+    font-size: 12.5px;
+    margin-top: 10px;
+  }
+  /* 카톡 대화 캡처 예시 교체: 위 .kakao-shot div를 실제 캡처 이미지(img 태그)로 바꾸세요 */
+
+  /* ---------- Footer CTA ---------- */
+  .footer-cta { background: var(--pink); color: #fff; text-align: center; padding: 40px 20px; }
+  .footer-cta h2 { color: #fff; }
+  .footer-cta .btn { background: var(--ink); box-shadow: none; }
+  footer.brand {
+    text-align: center;
+    padding: 22px 20px 40px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">4주 맞춤 트레이닝 플랜</span>
+    <h1>당신만을 위한<br><span class="accent">영어회화 트레이닝</span> 플랜</h1>
+    <div class="chip-row">
+      <span class="chip">회사원</span>
+      <span class="chip">하루 1시간</span>
+      <span class="chip">리스닝 70 : 스피킹 30</span>
+      <span class="chip">수능 1등급</span>
+      <span class="chip">토플 100</span>
+    </div>
+    <p class="intro">
+      평일 1시간, 최대한 꽉꽉 영어로 채워드리겠습니다. 혹시 주말도 시간이 가능하면 알려주세요! 더 채워드릴게요.
+      레벨·상황·흥미에 맞춰서 각각의 영어 루틴을 하나씩 잡아드릴 겁니다. 단, 처음부터 100으로 가지 않고
+      과제량은 적응을 고려해서 점진적으로 서서히 올려드립니다. 4주 트레이닝 기간뿐 아니라 그 후에도
+      지속적으로 혼자 유지할 수 있도록 시스템을 세팅해드릴게요!
+    </p>
+    <a class="btn" href="#plan">학습 로드맵 보기</a>
+  </div>
+</div>
+
+<div class="wrap" id="plan">
+
+  <section>
+    <span class="section-eyebrow">DIAGNOSIS</span>
+    <h2>지금까지는 이랬어요</h2>
+    <div class="card">
+      <span class="goal-badge">🎯 2년 뒤 목표 · 주재원</span>
+      <ul class="plain">
+        <li>전화영어, 쉐도잉, 낭독, 센텐스 빌딩까지 시도해봤지만 지속이 안 됨</li>
+        <li>인풋 위주의 학습이라 아웃풋 경험이 거의 없었고, 전화영어도 나중엔 콜포비아로 변함</li>
+        <li>영어로 말하려 하면 리딩·문법 공부 시 오류를 체크하던 습관 때문에 선택적 함구증이 됨</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band-pink">
+    <span class="section-eyebrow">3 KEY POINTS</span>
+    <h2>기획 포인트 <span class="accent">3가지</span></h2>
+    <div class="card point-card">
+      <div class="point-num">1</div>
+      <div>
+        <div class="point-title">OUTPUT</div>
+        <div class="point-sub">영어 실제로 써보기</div>
+        <div class="point-desc">'이미' 가지고 있는 영어 INPUT(단어, 문법)을 활용해서 직접 스스로 영어 문장 만들어보기. 즉, 낯선 OUTPUT을 최대한 많이 내보기.</div>
+      </div>
+    </div>
+    <div class="card point-card">
+      <div class="point-num">2</div>
+      <div>
+        <div class="point-title">INPUT</div>
+        <div class="point-sub">스피킹에 필요한 영어표현 익히기</div>
+        <div class="point-desc">토익, 수능 등 시험이 아닌 실제 대화에 필요한 영어 표현을 늘리기. OUTPUT 낼 수 있는 재료 늘리기.</div>
+      </div>
+    </div>
+    <div class="card point-card">
+      <div class="point-num">3</div>
+      <div>
+        <div class="point-title">영어 습관 들이기</div>
+        <div class="point-sub">영어 노출량 생활화 하기</div>
+        <div class="point-desc">영어로 읽고 듣고 쓰고 말하는 시간 최대화 하기. 특히 책상에 앉아서 하는 공부 시간 외에, 출퇴근 시간 등 자투리 시간을 영어로 채우기.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-ink">
+    <span class="section-eyebrow">TASK RATIO</span>
+    <h2>과제 구성 <span class="accent">(INPUT : OUTPUT)</span></h2>
+    <div class="ratio-row">
+      <div class="ratio-box">
+        <div class="ratio-label">INPUT</div>
+        <div class="ratio-pct">50%</div>
+      </div>
+      <div class="ratio-box output">
+        <div class="ratio-label">OUTPUT</div>
+        <div class="ratio-pct">50%</div>
+      </div>
+    </div>
+    <ul class="plain">
+      <li>INPUT : 외부 자료를 내 머릿속에 넣기 ⇒ 아는 영어 늘리기 (스피킹 재료)</li>
+      <li>OUTPUT : 스스로 영어 문장 만들어 보기 ⇒ 스피킹 속도 늘리기</li>
+    </ul>
+    <div class="callout">대체로 INPUT만 편하게 하려는 경향을 고려해서 OUTPUT 비중을 의도적으로 더 높게 짜드립니다. (진행하면서 계속 조정)</div>
+  </section>
+
+  <section>
+    <span class="section-eyebrow">INPUT</span>
+    <h2>INPUT 학습</h2>
+    <p class="muted">아래 3가지 해외 유튜브 중, 가장 마음에 드는 걸 골라주세요. 가볍게 골라주시고, 잘 맞지 않으면 다른 자료로 변경해드려요.</p>
+    <div class="card">
+      <div class="yt-pick">
+        <div>
+          <div class="yt-pick-title">추천 1 · 책, 자기계발</div>
+          <div class="yt-pick-sub">해외 유튜브 영상</div>
+        </div>
+        <a class="pill-outline" href="#" target="_blank" rel="noopener">영상 보기</a>
+      </div>
+      <div class="yt-pick">
+        <div>
+          <div class="yt-pick-title">추천 2 · 직장생활</div>
+          <div class="yt-pick-sub">해외 유튜브 영상</div>
+        </div>
+        <a class="pill-outline" href="#" target="_blank" rel="noopener">영상 보기</a>
+      </div>
+      <div class="yt-pick" style="margin-bottom:0;">
+        <div>
+          <div class="yt-pick-title">추천 3 · 비즈니스</div>
+          <div class="yt-pick-sub">해외 유튜브 영상</div>
+        </div>
+        <a class="pill-outline" href="#" target="_blank" rel="noopener">영상 보기</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <div class="step-card">
+        <span class="step-tag">STEP 1. 쉐도잉</span>
+        <div class="step-goal"><strong>목표</strong> : 발음 개선 · 자주 쓰는 영어 쌓기 · 영어 입에 익히기</div>
+        <div class="step-goal"><strong>방법</strong> : 영상과 스크립트를 보고 비슷하게 따라 말하기</div>
+        <div class="point-desc">쉐도잉에도 여러 방법이 있어서, 연습 '과정'까지 들어봐서 실수를 잡아내고 효율을 올려드립니다.</div>
+      </div>
+      <div class="step-card">
+        <span class="step-tag">STEP 2. 스스로 예문 영작하기</span>
+        <div class="step-goal"><strong>목표</strong> : 배운 영어 실제로 써먹기, INPUT의 OUTPUT화</div>
+        <div class="step-goal"><strong>방법</strong> : 지문에서 중요한 영어 하나를 뽑아 나만의 예시 문장 5개 영작하기</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-pink">
+    <span class="section-eyebrow">OUTPUT</span>
+    <h2>OUTPUT 학습</h2>
+    <div class="quote-block">"쓰지 못하는 거는?<br><span class="accent">말하지도 못합니다!</span>"</div>
+    <p class="muted">라이팅 없는 스피킹 공부는 제자리걸음입니다. 스피킹 중 막히면 그냥 넘어갈 수밖에 없지만, 라이팅은 하나하나 짚고 넘어갈 수 있어요.</p>
+    <div class="card">
+      <div class="step-card">
+        <span class="step-tag">STEP 1. 라이팅</span>
+        <div class="step-goal"><strong>목표</strong> : 알고 있는 영어 실제로 써보기 · 모르는 영어 찾아서 채우기 · 낯선 문장 활용해보기</div>
+        <div class="point-desc">라이팅 OT를 따로 보내드립니다. 어떻게, 얼마나 써야 하는지 가이드를 드려요.</div>
+      </div>
+      <div class="step-card">
+        <span class="step-tag">STEP 2. 첨삭본 반복 스피킹</span>
+        <div class="step-goal"><strong>목표</strong> : 최소한 내가 쓴 이야기는 평소보다 훨씬 더 매끄럽게 말할 수 있게 하기!</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="section-eyebrow">+ALPHA</span>
+    <h2>리스닝 귀뚫기 <span class="muted" style="font-size:14px;font-weight:700;">(자투리 시간 채우기)</span></h2>
+    <div class="card">
+      <p>기본 스피킹 과제는 책상에 앉아서 시간을 내야 하지만, 그 시간을 매일 확보하긴 어렵죠. 그래서 "자투리 시간"(지하철 등)을 영어로 채울 수 있도록 노출량을 잡아드립니다.</p>
+      <p class="muted">공부가 아닌 "습관"으로 접근해주세요. 필수 과제가 아닌 추가 과제로 가볍게 생각하셔도 됩니다. 100% 이해되는 자료는 없지만, 배울 게 없는 영상은 드리지 않아요.</p>
+      <div class="kakao-shot">▶ 오늘의 추천 리스닝 영상 자리<br>(실제 영상 링크로 교체 예정)</div>
+    </div>
+  </section>
+
+  <section class="band-pink">
+    <span class="section-eyebrow">SCHEDULE</span>
+    <h2>1주 시간표 예시</h2>
+    <div class="card">
+      <div class="tabs">
+        <button class="tab-btn active" id="tab-5" onclick="showTab('5')">주 5회 (매일 1시간)</button>
+        <button class="tab-btn" id="tab-3" onclick="showTab('3')">주 3회 (월·수·금)</button>
+      </div>
+      <div class="tab-panel active" id="panel-5">
+        <div class="day-row"><span class="day-badge">월</span><span class="day-task">INPUT_희망 유튜브 PART 1 + 리스닝</span></div>
+        <div class="day-row"><span class="day-badge">화</span><span class="day-task">INPUT_희망 유튜브 PART 2 + 리스닝</span></div>
+        <div class="day-row"><span class="day-badge">수</span><span class="day-task">OUTPUT_라이팅 + 리스닝</span></div>
+        <div class="day-row"><span class="day-badge">목</span><span class="day-task">OUTPUT_첨삭 공부 + 리스닝</span></div>
+        <div class="day-row"><span class="day-badge">금~주말</span><span class="day-task">OUTPUT_라이팅 + 희망 INPUT 유튜브 PART 3 + 리스닝</span></div>
+      </div>
+      <div class="tab-panel" id="panel-3">
+        <p class="muted" style="margin-top:0;">1시간 분량 과제를 이틀 중 하루에 몰아서 하거나, 매일 30분씩 나눠서 하시면 됩니다.</p>
+        <div class="day-row"><span class="day-badge">월~화</span><span class="day-task">INPUT_희망 유튜브 PART 1 + 리스닝</span></div>
+        <div class="day-row"><span class="day-badge">수~목</span><span class="day-task">OUTPUT_라이팅 + 리스닝 추천</span></div>
+        <div class="day-row"><span class="day-badge">금~월</span><span class="day-task">OUTPUT_첨삭 공부 + INPUT_PART 2 + 리스닝</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="section-eyebrow">4-WEEK PLAN</span>
+    <h2>4주 먼슬리 스케줄</h2>
+    <p class="muted">과제량은 주차별로 점진적으로 늘려나갑니다. 과제 결과에 따라 중간중간 조정되며, 4주차에는 살짝 벅찰 정도의 분량으로 세팅을 완료해드려요.</p>
+
+    <details class="week-acc" open>
+      <summary>1주차 · 루틴 만들기</summary>
+      <div class="week-acc-body">
+        <span class="week-task new">타이밍 체크</span>
+        <span class="week-task new">유튜브 리스닝</span>
+        <div class="week-note">기본 루틴에 익숙해지는 시작 주차예요.</div>
+      </div>
+    </details>
+    <details class="week-acc">
+      <summary>2주차 · 아웃풋 추가</summary>
+      <div class="week-acc-body">
+        <span class="week-task">타이밍 체크</span>
+        <span class="week-task">유튜브 리스닝</span>
+        <span class="week-task new">단문 영작 NEW</span>
+        <div class="week-note">기존 루틴에 단문 영작 과제가 더해져요.</div>
+      </div>
+    </details>
+    <details class="week-acc">
+      <summary>3주차 · 리스닝 강화</summary>
+      <div class="week-acc-body">
+        <span class="week-task">타이밍 체크</span>
+        <span class="week-task">유튜브 리스닝</span>
+        <span class="week-task">단문 영작</span>
+        <span class="week-task new">초집중 리스닝 NEW</span>
+        <div class="week-note">리스닝 훈련 강도가 한 단계 올라가요.</div>
+      </div>
+    </details>
+    <details class="week-acc">
+      <summary>4주차 · 실전 감각 완성</summary>
+      <div class="week-acc-body">
+        <span class="week-task">타이밍 체크</span>
+        <span class="week-task">유튜브 리스닝</span>
+        <span class="week-task">단문 영작</span>
+        <span class="week-task">초집중 리스닝</span>
+        <span class="week-task new">미드 병행 NEW</span>
+        <div class="week-note">4주 트레이닝의 마무리, 실전 감각을 완성해요.</div>
+      </div>
+    </details>
+  </section>
+
+  <section class="band-pink">
+    <span class="section-eyebrow">AFTER 4 WEEKS</span>
+    <h2>4주 트레이닝 종료 후<br>나의 영어회화</h2>
+    <div class="card">
+      <div class="check-item">
+        <div class="check-mark">✓</div>
+        <div>
+          <div class="check-title">명확한 학습 루틴</div>
+          <div class="check-desc">어떤 자료로, 어떻게, 얼마나 해야 하는지 이해하고 실천할 수 있어요.</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-mark">✓</div>
+        <div>
+          <div class="check-title">OUTPUT 성향 체득</div>
+          <div class="check-desc">시험 영어에서 벗어나 실제로 말하고 쓰는 방향으로 영어를 훈련할 수 있어요.</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-mark">✓</div>
+        <div>
+          <div class="check-title">영어 노출의 일상화</div>
+          <div class="check-desc">출퇴근 시간 등 자투리 시간에도 영어 노출을 자연스럽게 가져가요.</div>
+        </div>
+      </div>
+
+      <div class="ba-card before">
+        <div class="ba-label">BEFORE</div>
+        <ul class="plain">
+          <li>작심삼일</li>
+          <li>습관 X, 루틴 X</li>
+          <li>자료·방법에 대한 혼란, 부재</li>
+          <li>지속적인 영어 노출 X</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <div class="ba-label">AFTER</div>
+        <ul class="plain">
+          <li>지속 가능성 (혼자서도)</li>
+          <li>나만의 영어공부 시스템</li>
+          <li>정확한 학습량 + 방법 인지</li>
+          <li>편하고 가볍게 영어 노출</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-ink">
+    <span class="section-eyebrow">HOW IT WORKS</span>
+    <h2>수업 진행 방식</h2>
+    <div class="flow-step">📩 과제 수령</div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">✍️ 과제 수행<br><span style="font-weight:600;font-size:12px;color:#bbb;">다음날 오전 8시까지 (주3회는 이틀 뒤 오전 8시까지)</span></div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step">💬 피드백 &amp; 첨삭</div>
+    <div class="kakao-shot">💬 카톡 피드백 대화 캡처 예시 자리<br>(실제 캡처 이미지로 교체 예정)</div>
+    <ul class="plain" style="margin-top:18px;">
+      <li>카톡 체크는 다음날 오전 8시~오후 2시 사이에 드립니다.</li>
+      <li>과제 제출 기한은 다음날 오전 8시입니다. (주 3회의 경우 이틀 뒤 오전 8시, 48시간이 주어짐)</li>
+      <li>토·일은 트레이너 휴무입니다. (금요일 과제는 다음 주 월요일에 체크)</li>
+      <li>수강생 한 분 한 분 들여다보고 피드백을 드리기 때문에 실시간 답변은 어려울 수 있습니다.</li>
+      <li>결석에 대한 보충은 없습니다.</li>
+      <li>다만 여행, 출장, 병가 등을 24시간 전에 미리 알려주시면 그 기간만큼 홀딩해드립니다.</li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="footer-cta">
+  <span class="eyebrow" style="background:rgba(20,20,20,0.15);color:var(--ink);">START NOW</span>
+  <h2>이제, 4주 뒤<br>달라진 나를 만나보세요</h2>
+  <a class="btn" href="mailto:coach@example.com?subject=%EC%88%98%EC%97%85%20%EB%AC%B8%EC%9D%98">코치에게 문의하기</a>
+</div>
+<!-- 문의 이메일 교체: 위 mailto 링크의 coach@example.com 을 실제 연락받으실 이메일로 바꾸세요 -->
+
+<footer class="brand">
+  © 2026 미스터플루언씨 · 국내파 영어회화 트레이닝
+</footer>
+
+<script>
+function showTab(which) {
+  document.getElementById('tab-5').classList.toggle('active', which === '5');
+  document.getElementById('tab-3').classList.toggle('active', which === '3');
+  document.getElementById('panel-5').classList.toggle('active', which === '5');
+  document.getElementById('panel-3').classList.toggle('active', which === '3');
+}
+</script>
+
+</body>
+</html>
